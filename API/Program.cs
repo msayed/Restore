@@ -68,7 +68,7 @@ else
 }
 builder.Services.AddDbContext<StoreContext>(opt =>
 {
-    opt.UseNpgsql(connString);
+    opt.UseSqlite(connString);
 });
 
 
